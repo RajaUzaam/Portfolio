@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scaile=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <title>Raja Muhammad Uzaam Ahmad's Portfolio</title>
+      <style>
+        *{
+          color: azure;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          scroll-behavior: smooth;
+      }
+      .header {
+          position: fixed;
+          width: 100%;
+          height:60px;
+          background-color: red;
+          border-bottom: solid black 2px;
+      }
+      .navbar ul {
+          display: flex;
+          flex-direction: row;
+          list-style-type: none;
+          text-align: center;
+          max-width: 400px;
+          justify-content: space-evenly;
+          margin: 0 auto;
+          margin-top: 20px;
+          font-size: 20px;
+          font-weight: bold;
+      }
+      a {
+          text-decoration: none;
+      }
+      .navbar a:hover {text-decoration: underline;}
+      
+      .welcome-section {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 100vh;
+          justify-content: center;
+          align-items: center;
+          background-image: linear-gradient(to bottom right, red, yellow);
+      }
+      .projects {
+          width: 100%;
+          height: 200vh;
+          justify-content: center;
+          background-image: linear-gradient(to bottom right, yellow, orange);
+      }
+      .projects h1 {
+          padding-top: 60px;
+      }
+      p {font-size:30px;}
+      .project-tile {
+          display: grid;
+          grid-template-columns: 350px 350px 350px;
+          gap: 50px;
+          padding-left: 190px;
+          padding-top: 50px;
+      }
+      .project-tile p {
+          font-size: 25px;
+          padding: 5px;
+      }
+      h1 {font-size:60px;}
+      .project-tile a {
+          background-color:darkslategray;
+          height: 450px;
+          width: 350px;
+          border-radius: 20px;
+          box-shadow: 2px 2px 3px grey;
+          transition-property: box-shadow;
+          transition-duration: 0.5s;
+      }
+      .project-tile a:hover {
+          box-shadow: 0px 0px 20px red;
+      }
+      .project-tile img {
+          object-fit: cover;
+          width: 100%;
+          height: 90%;
+          border-radius: inherit;
+      }
+      .show-all button {
+          margin-top: 80px;
+          border: solid black;
+          background-color: red;
+          color: aliceblue;
+          width: 50%;
+          height: 50px;
+          border-radius: 20px;
+          font-size: 15px;
+          transition-property: background-color;
+          transition-duration: 0.5s;
+      }
+      .show-all button:hover {
+          background-color: darkgreen;
+          cursor: pointer;
+      }
+      .contact-section {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 100vh;
+          justify-content: center;
+          align-items: center;
+          background-image: linear-gradient(to bottom right, red, yellow);
+      }
+      .social {
+          display: flex;
+          flex-direction: row;
+          width: 800px;
+          justify-content: space-evenly;
+      }
+      .social a {
+          transition-property: margin-top;
+          transition-duration: 0.25s;
+      }
+      .social a:hover {
+          margin-top: 10px;
+          cursor: pointer;
+      }
+      .social p {
+          font-size: 20px;
+          font-weight: lighter;
+          text-decoration: none;
+          text-shadow: 2px 2px 3px grey;
+      }
+      .contact-section p {margin-bottom: 40px;}
+      footer {
+          background-color: black;
+          color: white;
+          height: 60px;
+          width: 100%;
+          border-top: solid red 2px;
+          justify-content: center;
+      }
+      footer p {font-size: 20px;}
+      @media screen and (max-width:480px) {
+          *{
+              font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          }
+      }
+      </style>
+    </head>
+    <body>
+        <header id="header" class="header">
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="#welcome-section">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="welcome-section" class="welcome-section">
+                <h1>Raja Muhammad Uzaam Ahmad</h1>
+                <p><i>Web Developer</i></p>
+            </section>
+            <section id="projects" class="projects">
+                <h1>My Projects</h1>
+            <div class="project-tile">
+                <a href="https://codepen.io/Raja-Muhammad-Uzaam-Ahmad/full/YzBeojy" target="_blank"><img src="webinsiders.png" alt="Project" width="70%" height="70%">
+                    <p>Web Insiders</p></a>
+                <a href="https://codepen.io/Raja-Muhammad-Uzaam-Ahmad/full/zYeRVjy" target="_blank"><img src="pythondoc.png" alt="Project" width="70%" height="70%">
+                    <p>Python Documentation</p></a>
+                <a href="https://codepen.io/Raja-Muhammad-Uzaam-Ahmad/full/GRzQbvo" target="_blank"><img src="feedbackfort.png" alt="Project" width="70%" height="70%">
+                    <p>Feedback, OG Fortnite</p></a>
+                <a href="https://codepen.io/Raja-Muhammad-Uzaam-Ahmad/full/XWOZLEy" target="_blank"><img src="tribute.png" alt="Project" width="70%" height="70%">
+                    <p>Tribute to a Leader</p></a>
+                <a href="https://codepen.io/Raja-Muhammad-Uzaam-Ahmad/full/RwvMNQL" target="_blank"><img src="overviewpy.png" alt="Project" width="70%" height="70%">
+                    <p>Overview to Python</p></a>
+                <a href="https://codepen.io/Raja-Muhammad-Uzaam-Ahmad/full/GRzxgLG" target="_blank"><img src="portfolio.png" alt="Project" width="70%" height="70%">
+                    <p>A Portfolio</p></a>
+            </div>
+            <a href="https://codepen.io/Raja-Muhammad-Uzaam-Ahmad" target="_blank" id="show-all" class="show-all"><button>Show All</button>
+            </section>
+            <section id="contact-section" class="contact-section">
+                <h1>Contact Details</h1>
+                <p><i>Here are some of my socials</i></p>
+                <div class="social">
+                <a href="https://github.com/RajaUzaam" target="_blank" id="profile-link"><i class="fab fa-github-square fa-3x"></i><p>Github</p></a>
+                <a><i class="fab fa-twitter-square fa-3x"></i><p>Twitter</p></a>
+                <a><i class="fas fa-at fa-3x"></i><p>Email</p></a>
+                <a><i class="fas fa-mobile-alt fa-3x"></i><p>Phone</p></a>
+            </div>
+            </section>
+        </main>
+        <footer>
+            <p>
+                <i>
+            Raja Muhammad Uzaam Ahmad's Web Developing Portfolio
+        </i>
+        </p>
+        </footer>
+    </body>
+</html>
